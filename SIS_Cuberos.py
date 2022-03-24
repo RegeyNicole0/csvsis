@@ -1,3 +1,15 @@
+"""
+        ASSIGNMENT IN CCC15
+Create a Simple STUDENT INFORMATION SYSTEM that:
+    - Display list of students
+    - Add new students
+    - Edit student
+    - Delete a student
+    - Search a student by id number
+
+REGGIE NICOLE C. CUBEROS            2020-0596
+"""
+
 import csv
 import os
 import sys
@@ -21,10 +33,8 @@ def disp_std():
         
         input("Press any key to continue")
     else: 
-        with open('path/to/default_file.csv','w',encoding='UTF8')as default_file:
-            class_file=csv.writer(default_file)
-            class_file.writerow(row)
-            input("No Class File exists, press any key to continue to create a file")
+        print("No Class File exists, making a new class file...")
+        return 0
 
 def add_std():
     print("-------------------------")
