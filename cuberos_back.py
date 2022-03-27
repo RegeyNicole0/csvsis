@@ -48,7 +48,7 @@ def search_std():
     global student_fields
     global class_file
     
-    print("--- Search Student ---")
+    print("--- SEARCH STUDENT ---")
     id_num = input("Enter Student ID no. to search: ")
     with open(class_file, "r", encoding="utf-8") as f:
         reader = csv.reader(f)
