@@ -19,7 +19,7 @@ def disp_std():
                     print(item, end="\t ")
                 print("\n")
         
-        input("Press any key to continue")
+        input("Press any key to continue ")
     else: 
         print("No Class File exists, making a new class file...")
         return 0
@@ -40,8 +40,8 @@ def add_std():
         writer = csv.writer(f)
         writer.writerows([student_data])
     
-    print("Data saved successfully")
-    input("Press any key to continue")
+    print("Studen Information added to the Class")
+    input("Press any key to continue ")
     return
     
 def search_std():
@@ -64,8 +64,8 @@ def search_std():
                     print("Course: ", row[5])
                     break
         else:
-            print("Student not found in our database")
-    input("Press any key to continue")
+            print("SNo Student found in the Class!!")
+    input("Press any key to continue ")
     
 def edit_std():
     global student_fields
@@ -99,9 +99,9 @@ def edit_std():
             writer = csv.writer(f)
             writer.writerows(updated_data)
     else:
-        print("Student not found in our database")
+        print("No Student found in the Class!!")
     
-    input("Press any key to continue")
+    input("Press any key to continue ")
     
     
 def delete_std():
@@ -129,6 +129,6 @@ def delete_std():
             writer.writerows(updated_data)
         print("Student", id_num, "deleted successfully")
     else:
-        print("Student not found in our database")
+        print("No Student found in the Class!!")
     
-    input("Press any key to continue")
+    input("Press any key to continue ")
